@@ -4,13 +4,14 @@ import { BrowserRouter } from 'react-router-dom';
 
 // ローカルファイルからのインポート
 import theme from './theme/theme'
+import { Router } from './router/Router';
 
 function App() {
   return (
     <div>
       <ChakraProvider theme={theme}>
         <BrowserRouter>
-          <Button colorScheme="teal">ボタン</Button>
+          <Router />
         </BrowserRouter>
       </ChakraProvider>
     </div>
