@@ -1,0 +1,12 @@
+import { memo, FC, ReactNode } from 'react';
+import { Button } from "@chakra-ui/react";
+
+type Props = {
+    children: ReactNode;
+};
+
+export const PrimaryButton: FC<Props> = memo((props) => {
+    return (
+        <Button bg="teal.400" color="white">ログイン</Button>
+    )
+})

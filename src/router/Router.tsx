@@ -4,6 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import { Login } from '../components/pages/Login';
 import { Page404 } from '../components/pages/Page404';
 import { homeRoutes } from './HomeRoutes';
+import { HeaderLayout } from '../components/templates/HeaderLayout';
 
 export const Router = memo(() => {
     return (
@@ -14,7 +15,12 @@ export const Router = memo(() => {
             <Route path="/home" render={({ match: { url } }) => (
                 <Switch>
                     {homeRoutes.map((route) => (
-                        <Route key={route.path} exact={route.exact} path={`${url}${route.path}`}>
+                        <Route
+                            key={route.path}
+                            exact={route.exact}
+                            path={`${url}${route.path}`}
+                        >
+                            <HeaderLayout>1</HeaderLayout>
                             {route.children}
                         </Route>
                     ))}
