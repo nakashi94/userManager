@@ -10,7 +10,7 @@ export const Login: VFC = memo(() => {
                 <Divider my={4} />
                 <Stack spacing={6} py={4} px={10}>
                     <Input placeholder="ユーザーID" />
-                    <Button bg="teal.400" color="white">ログイン</Button>
+                    <Button bg="teal.400" color="white" _hover={{opacity: 0.8}}>ログイン</Button>
                 </Stack>
             </Box>
         </Flex>
