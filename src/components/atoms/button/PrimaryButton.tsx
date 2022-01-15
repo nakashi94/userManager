@@ -7,6 +7,6 @@ type Props = {
 
 export const PrimaryButton: FC<Props> = memo((props) => {
     return (
-        <Button bg="teal.400" color="white">ログイン</Button>
+        <Button bg="teal.400" color="white" _hover={{ opacity:0.8 }}>ログイン</Button>
     )
 })
