@@ -7,13 +7,13 @@ export const Page404: FC = memo(() => {
         <>
             <p>404ページ</p>
             <p>This page is not fount.</p>
-                <Link to="/home">
-                    <SLinkWrapper>homepageはこちら</SLinkWrapper>
-                </Link>
+            <Link to="/home">
+                <SLinkColor>homepageはこちら</SLinkColor>
+            </Link>
         </>
     )
 });
 
-const SLinkWrapper = styled.div`
+const SLinkColor = styled.div`
     color: #1111ff;
 `
